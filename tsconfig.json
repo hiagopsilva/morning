@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react-native",
+    "experimentalDecorators": true,
+    "strict": true,
+    "baseUrl": "src",
+    "paths": {
+     "~/*": ["*"]
+    }
+  },
+  "extends": "expo/tsconfig.base"
+}
