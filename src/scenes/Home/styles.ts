@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { Platform } from 'react-native';
 import styled from 'styled-components/native';
 
@@ -5,6 +7,14 @@ import {
   getStatusBarHeight,
   getBottomSpace,
 } from 'react-native-iphone-x-helper';
+
+type PropsActive = {
+  active: boolean;
+};
+
+type PropsFirst = {
+  first: boolean;
+};
 
 export const Wrapper = styled.View`
   flex: 1;
@@ -80,7 +90,7 @@ export const ContentDays = styled.ScrollView.attrs({
   margin-top: 14px;
 `;
 
-export const WrapperDay = styled.View`
+export const WrapperDay = styled.View.attrs((props: PropsActive) => {})`
   width: 74px;
   height: 84px;
   background: ${props => (props.active ? '#7468ef' : '#E5E8EF')};
@@ -92,14 +102,30 @@ export const WrapperDay = styled.View`
   margin-right: 17px;
 `;
 
-export const TextDay = styled.Text`
+export const TextDay = styled.Text.attrs((props: PropsActive) => {})`
   color: ${props => (props.active ? '#ffff' : '#B7B0C8')};
   font-weight: 400;
   font-size: 18px;
 `;
 
-export const NumberDay = styled.Text`
+export const NumberDay = styled.Text.attrs((props: PropsActive) => {})`
   color: ${props => (props.active ? '#ffff' : '#3A3C43')};
   font-weight: 500;
   font-size: 24px;
+`;
+
+export const Options = styled.View`
+  margin-top: 27px;
+
+  flex-direction: row;
+  justify-content: center;
+`;
+
+export const TextOptions = styled.Text.attrs(
+  (props: PropsActive & PropsFirst) => {},
+)`
+  margin-right: ${props => (props.first ? 17 : 0)}px;
+  color: ${props => (props.active ? '#7468EF' : '#3A3C43')};
+  font-weight: 600;
+  font-size: 14px;
 `;

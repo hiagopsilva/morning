@@ -10,7 +10,9 @@ import {
   Header,
   MonthText,
   NumberDay,
+  Options,
   TextDay,
+  TextOptions,
   TextSpan,
   Title,
   TitleCalendar,
@@ -51,6 +53,13 @@ const Home: FC<Props> = () => {
           ))}
         </ContentDays>
       </Calendar>
+
+      <Options>
+        <TextOptions first active>
+          Pending
+        </TextOptions>
+        <TextOptions>Completed</TextOptions>
+      </Options>
     </Wrapper>
   );
 };
