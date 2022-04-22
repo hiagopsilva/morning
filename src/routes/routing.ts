@@ -1,5 +1,6 @@
 export enum RoutesPublic {
   WELCOME = 'WELCOME',
+  HOME = 'HOME',
 }
 
 export enum RoutesPrivate {

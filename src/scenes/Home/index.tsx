@@ -1,15 +1,22 @@
+import { StatusBar } from 'expo-status-bar';
 import React, { FC } from 'react';
 import { Text } from 'react-native';
 import Button from '~/components/Button';
-import { Wrapper } from './styles';
+import { Description, Header, TextSpan, Title, Wrapper } from './styles';
 
 type Props = {};
 
 const Home: FC<Props> = () => {
   return (
     <Wrapper>
-      <Text>HOME</Text>
-      <Button />
+      <StatusBar backgroundColor="#FFF" barStyle="dark-content" />
+
+      <Header>
+        <Title>Morning, Hiago</Title>
+        <Description>
+          <TextSpan>3 tasks</TextSpan> are waiting for you today
+        </Description>
+      </Header>
     </Wrapper>
   );
 };

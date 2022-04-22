@@ -19,7 +19,8 @@ const Navigation = ({ token }: Props): React.ReactElement => {
       <MainStack.Navigator
         headerMode="none"
         mode="modal"
-        initialRouteName={token ? StacksRoutes.PRIVATE : StacksRoutes.PUBLIC}
+        // initialRouteName={token ? StacksRoutes.PRIVATE : StacksRoutes.PUBLIC}
+        initialRouteName={StacksRoutes.PUBLIC}
       >
         <MainStack.Screen
           name={StacksRoutes.PRIVATE}
