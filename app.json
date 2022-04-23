@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "templateexpo",
-    "slug": "templateexpo",
+    "name": "Morning",
+    "slug": "Morning",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
     ]
   },
-  "name": "templateexpo"
+  "name": "Morning"
 }

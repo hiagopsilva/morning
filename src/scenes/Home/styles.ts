@@ -18,7 +18,9 @@ type PropsFirst = {
 
 export const Wrapper = styled.View`
   flex: 1;
-  margin-top: ${Platform.OS === 'ios' ? `${getStatusBarHeight() + 8}px` : 0};
+  margin-top: ${
+    Platform.OS === 'ios' ? `${getStatusBarHeight() + 8}px` : `16px`
+  };
   margin-bottom: ${Platform.OS === 'ios' ? `${getBottomSpace()}px` : 0};
   background: #F9F9F9;
 v`;

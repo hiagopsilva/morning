@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "templateexpo.app"
-               BlueprintName = "templateexpo"
-               ReferencedContainer = "container:templateexpo.xcodeproj">
+               BuildableName = "Morning.app"
+               BlueprintName = "Morning"
+               ReferencedContainer = "container:Morning.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "templateexpoTests.xctest"
-               BlueprintName = "templateexpoTests"
-               ReferencedContainer = "container:templateexpo.xcodeproj">
+               BuildableName = "MorningTests.xctest"
+               BlueprintName = "MorningTests"
+               ReferencedContainer = "container:Morning.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "templateexpo.app"
-            BlueprintName = "templateexpo"
-            ReferencedContainer = "container:templateexpo.xcodeproj">
+            BuildableName = "Morning.app"
+            BlueprintName = "Morning"
+            ReferencedContainer = "container:Morning.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "templateexpo.app"
-            BlueprintName = "templateexpo"
-            ReferencedContainer = "container:templateexpo.xcodeproj">
+            BuildableName = "Morning.app"
+            BlueprintName = "Morning"
+            ReferencedContainer = "container:Morning.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
