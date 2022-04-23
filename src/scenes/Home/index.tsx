@@ -3,15 +3,20 @@ import React, { FC } from 'react';
 import {
   Avatar,
   Calendar,
+  CheckTask,
   Content,
   ContentCalendar,
   ContentDays,
   Description,
   Header,
+  ListTasks,
   MonthText,
+  NewTask,
   NumberDay,
   Options,
+  Task,
   TextDay,
+  TextInput,
   TextOptions,
   TextSpan,
   Title,
@@ -25,7 +30,7 @@ type Props = {};
 const Home: FC<Props> = () => {
   return (
     <Wrapper>
-      <StatusBar backgroundColor="#FFF" barStyle="dark-content" />
+      <StatusBar backgroundColor="#f9f9f9" barStyle="dark-content" />
 
       <Header>
         <Content>
@@ -60,6 +65,49 @@ const Home: FC<Props> = () => {
         </TextOptions>
         <TextOptions>Completed</TextOptions>
       </Options>
+
+      <NewTask>
+        <TextInput new placeholder="Write a new task here...." />
+      </NewTask>
+
+      <ListTasks>
+        <Task>
+          <CheckTask />
+          <TextInput placeholder="Lorem ipsum csacascacsac ccsac cascas cascas cascas" />
+        </Task>
+        <Task>
+          <CheckTask />
+          <TextInput placeholder="Lorem ipsum csacascacsac ccsac cascas cascas cascas" />
+        </Task>
+        <Task>
+          <CheckTask />
+          <TextInput placeholder="Lorem ipsum csacascacsac ccsac cascas cascas cascas" />
+        </Task>
+        <Task>
+          <CheckTask />
+          <TextInput placeholder="Lorem ipsum csacascacsac ccsac cascas cascas cascas" />
+        </Task>
+        <Task>
+          <CheckTask />
+          <TextInput placeholder="Lorem ipsum csacascacsac ccsac cascas cascas cascas" />
+        </Task>
+        <Task>
+          <CheckTask />
+          <TextInput placeholder="Lorem ipsum csacascacsac ccsac cascas cascas cascas" />
+        </Task>
+        <Task>
+          <CheckTask />
+          <TextInput placeholder="Lorem ipsum csacascacsac ccsac cascas cascas cascas" />
+        </Task>
+        <Task>
+          <CheckTask />
+          <TextInput placeholder="Lorem ipsum csacascacsac ccsac cascas cascas cascas" />
+        </Task>
+        <Task>
+          <CheckTask />
+          <TextInput placeholder="Lorem ipsum csacascacsac ccsac cascas cascas cascas" />
+        </Task>
+      </ListTasks>
     </Wrapper>
   );
 };

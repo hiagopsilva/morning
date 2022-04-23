@@ -129,3 +129,48 @@ export const TextOptions = styled.Text.attrs(
   font-weight: 600;
   font-size: 14px;
 `;
+
+export const ListTasks = styled.ScrollView.attrs({
+  showsVerticalScrollIndicator: false,
+})`
+  flex: 1;
+
+  padding-horizontal: 22px;
+  /* margin-top: 8px; */
+`;
+
+export const NewTask = styled.View`
+  margin-left: auto;
+  margin-top: 27px;
+`;
+
+export const Task = styled.View`
+  width: 100%;
+
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 12px;
+`;
+
+export const CheckTask = styled.View`
+  width: 32px;
+  height: 32px;
+  background: #c4c4c4;
+  border-radius: 16px;
+
+  margin-right: 12px;
+`;
+
+export const TextInput = styled.TextInput.attrs({
+  placeholderTextColor: '#555454',
+})`
+  background: ${props => (props.new ? 'transparent' : '#ffff')};
+  border: ${props => (props.new ? 'none' : '1px solid #e5e8ef;')};
+  height: 49px;
+  border-radius: 8px;
+  width: 302px;
+
+  padding-horizontal: 12px;
+  margin-right: 22px;
+`;
