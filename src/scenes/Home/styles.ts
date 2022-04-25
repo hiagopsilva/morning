@@ -16,7 +16,9 @@ type PropsFirst = {
   first: boolean;
 };
 
-export const Wrapper = styled.View`
+export const Wrapper = styled.ScrollView.attrs({
+  showsVerticalScrollIndicator: false,
+})`
   flex: 1;
   margin-top: ${
     Platform.OS === 'ios' ? `${getStatusBarHeight() + 8}px` : `16px`
